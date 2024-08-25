@@ -1,0 +1,209 @@
+/* MARGIN, PADDINGS, DIMENSION & CENTRALIZATION */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 825px;
+  margin: 0 auto;
+}
+
+.product-img {
+  width: 300px;
+  height: auto;
+}
+
+.more-info {
+  margin-bottom: 8px;
+}
+
+.detail-title {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+
+ul {
+  margin-left: 24px;
+  margin-bottom: 15px;
+}
+li {
+  margin-bottom: 12px;
+}
+
+/* )OTHERS */
+
+body {
+  color: #131212;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+.content {
+  border: 4px solid #000000;
+  margin-top: 8px;
+  position: relative;
+}
+
+.heading {
+  font-size: 22px;
+  background-color: #ebebeb;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0;
+  margin: 0 0;
+}
+
+.price {
+  font-size: 24px;
+  margin: 0 0;
+}
+
+.free {
+  font-size: 12px;
+  font-weight: bold;
+  color: #4444448f;
+  text-transform: uppercase;
+  /* margin-bottom: 20px; */
+}
+
+a:link {
+  color: black;
+  text-decoration: underline solid;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.detail-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0;
+}
+
+.detail-list {
+  list-style: square;
+}
+
+.btn-1 {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #d1d1d1;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+  padding: 16px;
+  width: 100%;
+  /* text-align: center; */
+}
+
+.btn-1:hover {
+  color: black;
+  background-color: white;
+  border-top: 4px solid #131212;
+}
+
+/* CHALLENGE 44 */
+
+.sale {
+  background-color: #ec2f2f;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 7px 15px;
+  display: inline-block;
+  position: absolute;
+  top: -17px;
+  left: -34px;
+}
+
+.color {
+  background-color: #000000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.color-blue {
+  background-color: #2f6ee2;
+}
+.color-red {
+  background-color: #ec2f2f;
+}
+
+.color-yellow {
+  background-color: #f8bf1e;
+}
+
+.color-green {
+  background-color: #98cc20;
+}
+.color-brown {
+  background-color: #885214;
+}
+
+/* CHALLENGE 51 - FLOAT*/
+
+/* (825- 8 - 250 - 80)/2 */
+.product-img {
+  float: left;
+  margin-right: 40px;
+  width: 243px;
+}
+
+.pricing {
+  float: left;
+  width: 243px;
+  margin-right: 40px;
+  margin-top: 24px;
+}
+
+.details {
+  float: left;
+  width: 243px;
+  margin-top: 32px;
+}
+
+.price {
+  float: left;
+}
+.free {
+  float: right;
+  padding: 10px 0;
+}
+
+/* 1st method to correct more-info from wrapping between the price and free shipping */
+/* 
+/* create a div for both first then apply the below code, you can also simply apply clearfix class*/
+
+/* .shipping {
+  float: left;
+  display: block;
+  width: 250px;
+  align-content: center;
+}  */
+
+/* 2nd method to correct more-info from wrapping between the price and free shipping */
+.more-info {
+  clear: both;
+  margin-bottom: 10px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
